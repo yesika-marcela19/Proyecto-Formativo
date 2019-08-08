@@ -69,7 +69,7 @@
                                 </span>
                                 <div>
                                     <p class="app-notification__message">
-                                        Lisa sent you a mail
+                                       hola a todos
                                     </p>
                                     <p class="app-notification__meta">
                                         2 min ago
