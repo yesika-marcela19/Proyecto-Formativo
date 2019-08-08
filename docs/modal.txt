@@ -1,0 +1,83 @@
+!-- Edit Modal-->
+    <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <center><h4 class="modal-title" id="myModalLabel">Asignar Ambiente de Formación</h4></center>
+                </div>
+                <div class="modal-body">
+				<div class="container-fluid">
+				
+	<form method="post"  name="formulario" action="save_fichas_ambientes.php">
+				<div class="col-sm-4">
+                    <div class="form-group">
+						<div class="form-line"><b>Codigo Ficha:</b>
+						<input type="text" name="fk_id_ficha" class="form-control" id="pk_codigo_ficha" readonly="readonly"/>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-4">
+                    <div class="form-group">
+						<div class="form-line"><b>Fecha Inicio:</b>
+						<input type="text" name="fecha_inicio" class="form-control" id="fecha_inicio" readonly="readonly" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-4">
+                    <div class="form-group">
+						<div class="form-line"><b>Fecha Fin:</b>
+						<input type="text" name="fecha_fin" class="form-control" id="fecha_fin" readonly="readonly"/>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-12">
+                    <div class="form-group">
+						<div class="form-line"><b>Nombre Programa:</b>
+						<input type="text" name="codigo_sitio" class="form-control" id="nombre_prog" readonly="readonly"/>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-sm-12">
+                <div class="form-group">
+					<div class="form-line"><b>Asignar Ambiente:</b>				
+						<select id="fk_id_sitio" name='fk_id_sitio'  data-style="form-control" class="form-control show-tick" data-live-search="true" required/>
+							<option value="">- Seleccione Uno -</option>
+								<?php foreach ($ambiente as $id) {
+									echo "<option  value=".$id[0].">".$id[1]."</option>";
+																} 
+								?>
+						</select>
+					</div>
+				</div>
+			</div>
+				
+			<div class="col-sm-12">
+                    <div class="form-group">
+						<div class="form-line"><b>Observación: (Escriba los dias a programar)</b>
+						<input type="textarea" name="desc_sit_fic" placeholder="Digite Ejemplo: lunes, martes, miercoles" class="form-control" id="pk_codigo_ficha" required/>
+						</div>
+					</div>
+				</div>	
+				
+				</div>
+                <div class="modal-footer">
+				
+                    <button type="button" class="btn btn-primary m-t-15 waves-effect" data-dismiss="modal">Cancelar</button>
+                    
+					<button class="btn btn-primary m-t-15 waves-effect" type="submit0">	Asignar Ambiente</button>
+					
+                </div>
+				</form>	 
+				
+
+							 
+            </div>
+        </div>
+    </div>
