@@ -68,7 +68,9 @@
                                     </span>
                                 </span>
                                 <div>
-                                    <p class="app-notification__message"></p>
+                                    <p class="app-notification__message">
+                                       hola a todos
+                                    </p>
                                     <p class="app-notification__meta">
                                         2 min ago
                                     </p>
